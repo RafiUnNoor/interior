@@ -1,0 +1,74 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins' , serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(28, 28, 82);
+    background-color: rgb(220, 218, 218);
+    padding: 0 50px;
+    border-radius: 10px;
+    margin: 30px 0 0 10px;
+}
+header p{
+    font-weight: 400;
+    margin: auto;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.container .canvas{
+    padding: 10px;
+    background-color: rgb(189, 176, 176);
+    border-radius: 10px;
+}
+.container .canvas img{
+    width: 70vw;
+    margin: auto;
+}
+.container .others{
+ background-color: aliceblue;
+ padding: 50px 15px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ gap: 80px;
+}
+.container .others .color{
+    margin: auto;
+    text-transform: uppercase;
+}
+.container .others .color input{
+    width: 100%;
+    color: white;
+}
+.container .canvas .blank{
+    position: absolute;
+    background-color: aquamarine;
+    width: 684px;
+    height: 333px;
+    margin-top: -440px;
+    margin-left: 151px;
+    opacity: .25;
+}
+.container .assets{
+    position: absolute;
+    margin: auto;
+}
+
+
