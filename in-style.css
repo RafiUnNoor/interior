@@ -1,74 +1,332 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-*{
+
+
+html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Poppins' , serif;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  *,
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  
+  h1,
+  h2,
+  label,
+  button,
+  .swal-title,
+  .swal-button {
+    font-family: "Zilla Slab", serif;
+    text-transform: lowercase;
+  }
+  
+  h1,
+  h2 {
+    line-height: 1;
+  }
+  
+  .highlight {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), color-stop(40%, #f3e8e1));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f3e8e1 40%);
+  }
+  
+  h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 2.8rem;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  main {
+    height: 100vh;
+    padding-top: 10px;
+  }
+  
+  .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+
+  
+  .swal-title,
+  .swal-button {
+    font-weight: 300;
+  }
+  
+  .swal-title {
+    font-size: 2.4rem;
+  }
+  
+  .swal-button {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 0;
+    font-size: 1.6rem;
+    width: 120px;
+    border-radius: 0;
+  }
+  
+  .swal-button:not([disabled]):hover,
+  .swal-button:not([disabled]):focus {
+    background-color: #f3e8e1;
+    cursor: pointer;
+  }
+  
+  .swal-footer {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  header {
+    height: 100vh;
+  }
+  
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  
+  header .writtenContent {
+    width: 70%;
+    padding: 250px 0 50px;
+  }
+  
+  header p {
+    font-size: 2.2rem;
+  }
+  
+  header button {
+    margin-top: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 0;
+    font-size: 2rem;
+    width: 150px;
+  }
+  
+  header button:hover,
+  header button:focus {
+    background-color: #f3e8e1;
+    cursor: pointer;
+  }
+  
+  header .imageContainer {
+    width: 280px;
+    padding-top: 60px;
+  }
+  
+  .options {
+    width: 100%;
+  }
+  
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  label {
+    font-size: 2rem;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  input[type="radio"]:hover + label,
+input[type="radio"]:focus + label,
+input[type="checkbox"]:hover + label,
+input[type="checkbox"]:focus + label {
+  background-color: #f3e8e1;
+  cursor: pointer;
 }
-header{
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  background-color: #f3e8e1;
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+.canvas .imageContainer {
+    display: block;
+  }
+ 
+  
+  .canvas .sofa{
+    width: 45%;
+    left: 320px;
+    top: 1100px;
+    position: absolute;
+  }
+  .canvas .sofa-02{
+    width: 45%;
+    left: 320px;
+    top: 1015px;
+    position: absolute;
+    z-index: -5;
+  }
+  .canvas .sofa-03{
+    width: 45%;
+    left: 320px;
+    top: 1175px;
+    position: absolute;
+    z-index: -2;
+  }
+  .canvas .sofa-04{
+    width: 45%;
+    left: 320px;
+    top: 1010px;
+    position: absolute;
+    z-index: -3;
+  }
+  .canvas .plant{
+    width: 12%;
+    left: 890px;
+    top: 1030px;
+    position: absolute;
+    z-index: -3;
+  }
+.canvas .centerTable {
+    width: 25%;
+    left: 475px;
+    top: 1100px;
+    position: absolute;
+  }
+.canvas .lamp {
+    width: 25%;
+    left: 83px;
+    top: 970px;
+    position: absolute;
+  }
+.canvas .lamp-03 {
+    width: 35%;
+    left: 720px;
+    top: 850px;
+    transform: scaleX(-1);
+    position: absolute;
+  }
+
+
+
+  #demo{
+    background-color: antiquewhite;
+    width: 600px;
+    height: 600px;
+    z-index: -10;
+}
+#myColor{
+    width: 300px;
+    height: 15px;
+}
+#myRange{
+    width: 300px;
+    height: 15px;
+}
+
+
+ .wall-size{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-header h1{
-    text-transform: uppercase;
-    font-weight: 700;
-    color: rgb(28, 28, 82);
-    background-color: rgb(220, 218, 218);
-    padding: 0 50px;
-    border-radius: 10px;
-    margin: 30px 0 0 10px;
-}
-header p{
-    font-weight: 400;
-    margin: auto;
-    padding: 20px;
-}
-.container{
+    justify-content: space-evenly;
+    width: 90vw;
+    margin-left: 50px;
+    margin-bottom: 50px;
+ }
+
+  .control{
     display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-.container .canvas{
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(215, 254, 254);
     padding: 10px;
-    background-color: rgb(189, 176, 176);
-    border-radius: 10px;
-}
-.container .canvas img{
-    width: 70vw;
-    margin: auto;
-}
-.container .others{
- background-color: aliceblue;
- padding: 50px 15px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
- gap: 80px;
-}
-.container .others .color{
-    margin: auto;
-    text-transform: uppercase;
-}
-.container .others .color input{
-    width: 100%;
-    color: white;
-}
-.container .canvas .blank{
-    position: absolute;
-    background-color: aquamarine;
-    width: 684px;
-    height: 333px;
-    margin-top: -440px;
-    margin-left: 151px;
-    opacity: .25;
-}
-.container .assets{
-    position: absolute;
-    margin: auto;
-}
-
-
+    margin-bottom: 20px;
+  }

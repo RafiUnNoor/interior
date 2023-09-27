@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!--<header>
         <h1>Chose Your Interior</h1>
         <p>Here are some <u>furnitures</u> and <u>props</u> to understand and decorate your home interior <strong>YOURSELF</strong> </p>
     </header>
@@ -35,12 +35,151 @@
                 </select>
             </div>
         </div>
+    </div>-->
+     <!-- header begins -->
+     <header>
+        <!-- wrapper begins -->
+        <div class="wrapper">
+            <div class="writtenContent">
+                <h1><span class="highlight">Design your own interior space.</span></h1>
+                <p>Use the selections below to design your own cozy study space!</p>
+                <button aria-label="Click to start playing" class="startButton">Start.</button>
+            </div>
+            <div class="imageContainer">
+                <img src="./assets/plant-03.png" alt="A yellow pot with green leaves extending from it">
+            </div>
+        </div>
+        <!-- wrapper ends -->
+    </header>
+    <!-- header ends -->
+
+    <!--wall size and color-->
+<div class="wall-size">
+    <div class="control">
+    <input type="range" min="500" max="1260" value="500" class="slider" id="myRange">
+    <input type="color" id="myColor">
+</div>
+    <div id="demo"></div>
+</div>
+<!--wall size and color ends-->
+
+<main>
+    <!-- wrapper begins -->
+    <div class="wrapper flexContainer">
+        <!-- div for the form and options -->
+        <div class="options">
+            <h2><span class="highlight">choose any accessories:</span></h2>
+            <form class="base" action="">
+                <input aria-hidden='true' class="item" type="radio" name="sitting" id="lamp" value="lamp">
+                <label aria-label="Click to add a lamp" class="lamp" for="lamp">lamp</label>
+        
+                <input aria-hidden='true' class="item" type="radio" name="sitting" id="sofa" value="sofa">
+                <label aria-label="Click to add a sofa" class="sofa" for="sofa">sofa</label>
+        
+                <input aria-hidden='true' class="item" type="radio" name="sitting" id="centerTable" value="centerTable">
+                <label aria-label="Click to add a bean bag" class="centerTable" for="centerTable">Center Table</label>
+            </form>
+            
+            <form class="accessories" action="">
+
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp 02" value="lamp 02">
+                <label aria-label="Click to add a sofa 04 table" class="lamp 02" for="lamp 02">Lamp 02</label>
+        
+                <input aria-hidden='true' class="item animal" type="checkbox" id="dog" value="dog">
+                <label aria-label="Click to add a dog" class="dog" for="dog">Dog</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="plant" value="plant">
+                <label aria-label="Click to add a plant" class="plant" for="plant">Plant</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="diffuser" value="diffuser">
+                <label aria-label="Click to add a diffuser" class="diffuser" for="diffuser">Diffuser</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="music" value="music">
+                <label aria-label="Click to add a radio for music" class="music" for="music">Music</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp 03" value="lamp 03">
+                <label aria-label="Click to add a lamp 03" class="lamp 03" for="lamp 03">lamp 03</label>
+        
+                <input aria-hidden='true' class="item drink" type="checkbox" name="beverage" id="tea" value="tea">
+                <label aria-label="Click to add tea" class="tea" for="tea">Tea</label>
+        
+                <input aria-hidden='true' class="item drink" type="checkbox" name="beverage" id="sofa 04" value="sofa 04">
+                <label aria-label="Click to add sofa 04" class="sofa 04" for="sofa 04">sofa 04</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="sofa 03" value="sofa 03">
+                <label aria-label="Click to add a sofa 03" class="sofa 03" for="sofa 03">sofa 03</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="laptop" value="laptop">
+                <label aria-label="Click to add a laptop" class="laptop" for="laptop">Laptop</label>
+
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp" value="lamp">
+                <label aria-label="Click to add a lamp" class="lamp" for="lamp">Lamp</label>
+
+                <input aria-hidden='true' class="item animal" type="checkbox" id="sofa 02" value="sofa 02">
+                <label aria-label="Click to add a sofa 02" class="sofa 02" for="sofa 02">sofa 02</label>
+            </form>
+        </div>
+
+        <!-- div for the images -->
+        <div class="canvas">
+            <div class="imageContainer sofa radio">
+                <img src="./assets/three-sofa.png" alt="A grey sofa">
+            </div>
+            <div class="imageContainer centerTable radio">
+                <img src="./assets/ct-4.png" alt="A center table">
+            </div>
+            <div class="imageContainer sofa-04">
+                <img src="./assets/two-sofa.png" alt="A small cup of sofa 04 in a burgundy cup">
+            </div>
+            <div class="imageContainer lamp 02">
+                <img src="./assets/fl-2.png" alt="A white and wood lamp 02">
+            </div>
+            <div class="imageContainer lamp radio">
+                <img src="./assets/fl-1.png" alt="A lamp with a rolling char">
+            </div>
+            <div class="imageContainer diffuser">
+                <img src="./assets/diffuser-03.png" alt="A small aromatherapy diffuser">
+            </div>
+            <div class="imageContainer dog">
+                <img src="./assets/dog-03.png" alt="A brown dog sleeping on a dog bed">
+            </div>
+            <div class="imageContainer lamp">
+                <img src="./assets/fl-1.png" alt="A floor lamp">
+            </div>
+            <div class="imageContainer laptop">
+                <img src="./assets/laptop-03.png" alt="An open grey laptop">
+            </div>
+            <div class="imageContainer music">
+                <img src="./assets/music-03.png" alt="A black speaker">
+            </div>
+            <div class="imageContainer sofa-03">
+                <img src="./assets/lg-sofa.png" alt="A white and yellow sofa 03">
+            </div>
+            <div class="imageContainer plant">
+                <img src="./assets/plant-03.png" alt="A yellow pot with green leaves extending from it">
+            </div>
+            <div class="imageContainer lamp-03">
+                <img src="./assets/fl-3.png" alt="A bowl of popcorn">
+            </div>
+            <div class="imageContainer tea">
+                <img src="./assets/tea-03.png" alt="A small cup of tea">
+            </div>
+            <div class="imageContainer sofa-02">
+                <img src="./assets/sofa-1.png" alt="A navy blue two seater sofa">
+            </div>
+        </div>
     </div>
+    <!-- wrapper ends -->
+</main>
+<!-- main ends -->
 
+     <!-- jQuery library -->
+     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 
-
-
-
+     <!-- sweet alert library -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
+     <!-- my JS -->
     <script src="in-op.js"></script>
 </body>
 </html>
