@@ -1,6 +1,4 @@
 
-
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 
@@ -16,18 +14,18 @@ color.addEventListener("input" , ()=>{
 });
 
 
-// make a name space object
-const makeStudySpace = {};
+document.getElementById("lamp3").addEventListener("click",function(){
+   var lamp3 = document.getElementById("lampThree");
+   if(lamp3.style.display == 'none'){
+    lamp3.style.display = 'block';
+   }else{lamp3.style.display = 'none';}
+   event.preventDefault();  
+});
 
-// cache selectors
-makeStudySpace.$deskInput = $('input#desk');
-makeStudySpace.$coffeeTableInput = $('input#coffeeTable');
-
-// make function to show the photo on the canvas and pass value selected
-makeStudySpace.showPhoto = function(value){
-    // make variable for the selected photo 
-    let chosenPhoto = $(`.canvas .imageContainer.${value}`);
-    
-    // toggle the show class on the chosen photo
-    chosenPhoto.toggleClass('show');
-}
+document.getElementById("plantCanvas").addEventListener("click",function(){
+   var plnt = document.getElementById("plantation");
+   if(plnt.style.display == 'none'){
+    plnt.style.display = 'block';
+   }else{plnt.style.display = 'none';}
+   event.preventDefault();  
+});

@@ -57,6 +57,7 @@
 <div class="wall-size">
     <div class="control">
     <input type="range" min="500" max="1260" value="500" class="slider" id="myRange">
+    <label aria-label="Adjust wall size" class="wallSize" for="myRange">Adjust wall size and color</label>
     <input type="color" id="myColor">
 </div>
     <div id="demo"></div>
@@ -68,55 +69,90 @@
     <div class="wrapper flexContainer">
         <!-- div for the form and options -->
         <div class="options">
-            <h2><span class="highlight">choose any accessories:</span></h2>
+            <h2><span class="highlight">choose any lamp:</span></h2>
             <form class="base" action="">
                 <input aria-hidden='true' class="item" type="radio" name="sitting" id="lamp" value="lamp">
                 <label aria-label="Click to add a lamp" class="lamp" for="lamp">lamp</label>
-        
-                <input aria-hidden='true' class="item" type="radio" name="sitting" id="sofa" value="sofa">
-                <label aria-label="Click to add a sofa" class="sofa" for="sofa">sofa</label>
-        
-                <input aria-hidden='true' class="item" type="radio" name="sitting" id="centerTable" value="centerTable">
-                <label aria-label="Click to add a bean bag" class="centerTable" for="centerTable">Center Table</label>
-            </form>
-            
-            <form class="accessories" action="">
 
                 <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp 02" value="lamp 02">
                 <label aria-label="Click to add a sofa 04 table" class="lamp 02" for="lamp 02">Lamp 02</label>
-        
-                <input aria-hidden='true' class="item animal" type="checkbox" id="dog" value="dog">
-                <label aria-label="Click to add a dog" class="dog" for="dog">Dog</label>
-        
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="plant" value="plant">
-                <label aria-label="Click to add a plant" class="plant" for="plant">Plant</label>
-        
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="diffuser" value="diffuser">
-                <label aria-label="Click to add a diffuser" class="diffuser" for="diffuser">Diffuser</label>
-        
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="music" value="music">
-                <label aria-label="Click to add a radio for music" class="music" for="music">Music</label>
-        
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp 03" value="lamp 03">
-                <label aria-label="Click to add a lamp 03" class="lamp 03" for="lamp 03">lamp 03</label>
-        
-                <input aria-hidden='true' class="item drink" type="checkbox" name="beverage" id="tea" value="tea">
-                <label aria-label="Click to add tea" class="tea" for="tea">Tea</label>
-        
-                <input aria-hidden='true' class="item drink" type="checkbox" name="beverage" id="sofa 04" value="sofa 04">
-                <label aria-label="Click to add sofa 04" class="sofa 04" for="sofa 04">sofa 04</label>
-        
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="sofa 03" value="sofa 03">
-                <label aria-label="Click to add a sofa 03" class="sofa 03" for="sofa 03">sofa 03</label>
-        
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="laptop" value="laptop">
-                <label aria-label="Click to add a laptop" class="laptop" for="laptop">Laptop</label>
 
-                <input aria-hidden='true' class="item" type="checkbox" name="" id="lamp" value="lamp">
-                <label aria-label="Click to add a lamp" class="lamp" for="lamp">Lamp</label>
+                <button aria-hidden='true' class="item" name="" id="lamp3" value="lamp 03"> lamp 03</button>
+
+                
+                
+            </form>
+
+            <h2><span class="highlight">choose any sofa:</span></h2>
+            <form class="accessories" action="">
+
+                <input aria-hidden='true' class="item" type="radio" name="sitting" id="sofa" value="sofa">
+                <label aria-label="Click to add a sofa" class="sofa" for="sofa">sofa</label>
 
                 <input aria-hidden='true' class="item animal" type="checkbox" id="sofa 02" value="sofa 02">
                 <label aria-label="Click to add a sofa 02" class="sofa 02" for="sofa 02">sofa 02</label>
+
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="sofa 03" value="sofa 03">
+                <label aria-label="Click to add a sofa 03" class="sofa 03" for="sofa 03">sofa 03</label>
+
+                <input aria-hidden='true' class="item drink" type="checkbox" name="beverage" id="sofa 04" value="sofa 04">
+                <label aria-label="Click to add sofa 04" class="sofa 04" for="sofa 04">sofa 04</label>
+            </form>
+
+                <h2><span class="highlight">choose any center table:</span></h2>
+                <form class="accessories" action="">
+
+                <input aria-hidden='true' class="item" type="radio" name="sitting" id="centerTable" value="centerTable">
+                <label aria-label="Click to add a center table" class="centerTable" for="centerTable">Center Table</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="centerTable 02" value="centerTable 02">
+                <label aria-label="Click to add a radio for centerTable 02" class="centerTable 02" for="centerTable 02">center Table 02</label>
+        
+                <input aria-hidden='true' class="item drink" type="checkbox" name="beverage" id="centerTable 03" value="centerTable 03">
+                <label aria-label="Click to add centerTable 03" class="centerTable 03" for="centerTable 03">center Table 03</label>
+        
+                <input aria-hidden='true' class="item" type="checkbox" name="" id="centerTable 04" value="centerTable 04">
+                <label aria-label="Click to add a centerTable 04" class="centerTable 04" for="centerTable 04">center Table 04</label>
+
+            </form>
+                <h2><span class="highlight">choose any accessories:</span></h2>
+                <form class="accessories" action="">
+                    
+             <button aria-hidden="true" class="item animal" id="dog" value="dog">
+                <label aria-label="Click to add a animal" class="dog" for="dog">dog</label>
+             </button>
+             <button aria-hidden='true' class="item plants" name="" id="plantCanvas" value="plant" >Plant</button>
+
+             <button aria-hidden='true' class="item"  name="" id="diffuser" value="diffuser">
+                <label aria-label="Click to add a diffuser" class="diffuser" for="diffuser">Diffuser</label>
+             </button>
+             
+            
+
+
+            </form>
+                <h2><span class="highlight">choose any bookshelf:</span></h2>
+                <form class="accessories" action="">
+
+                    <input aria-hidden='true' class="item bookshelf" type="checkbox" id="bookshelf" value="bookshelf">
+                    <label aria-label="Click to add a bookshelf" class="bookshelf" for="bookshelf">bookshelf 01</label>
+
+                    <input aria-hidden='true' class="item bookshelf" type="checkbox" id="bookshelf" value="bookshelf">
+                    <label aria-label="Click to add a bookshelf" class="bookshelf" for="bookshelf">bookshelf 02</label>
+
+                    <input aria-hidden='true' class="item bookshelf" type="checkbox" id="bookshelf" value="bookshelf">
+                    <label aria-label="Click to add a bookshelf" class="bookshelf" for="bookshelf">bookshelf 03</label>
+
+                    <input aria-hidden='true' class="item bookCabinet" type="checkbox" id="bookCabinet" value="bookCabinet">
+                    <label aria-label="Click to add a bookCabinet" class="bookCabinet" for="bookCabinet">book cabinet 01</label>
+
+                    <input aria-hidden='true' class="item bookCabinet" type="checkbox" id="bookCabinet" value="bookCabinet">
+                    <label aria-label="Click to add a bookCabinet" class="bookCabinet" for="bookCabinet">book cabinet 02</label>
+
+                    <input aria-hidden='true' class="item bookCabinet" type="checkbox" id="bookCabinet" value="bookCabinet">
+                    <label aria-label="Click to add a bookCabinet" class="bookCabinet" for="bookCabinet">book cabinet 03</label>
+
+
             </form>
         </div>
 
@@ -140,29 +176,29 @@
             <div class="imageContainer diffuser">
                 <img src="./assets/diffuser-03.png" alt="A small aromatherapy diffuser">
             </div>
-            <div class="imageContainer dog">
-                <img src="./assets/dog-03.png" alt="A brown dog sleeping on a dog bed">
+            <div class="imageContainer bookshelf">
+                <img src="./assets/bookshelf-03.png" alt="A brown bookshelf sleeping on a bookshelf bed">
             </div>
             <div class="imageContainer lamp">
                 <img src="./assets/fl-1.png" alt="A floor lamp">
             </div>
-            <div class="imageContainer laptop">
-                <img src="./assets/laptop-03.png" alt="An open grey laptop">
+            <div class="imageContainer centerTable 04">
+                <img src="./assets/ct-5.png" alt="An open grey centerTable 04">
             </div>
-            <div class="imageContainer music">
-                <img src="./assets/music-03.png" alt="A black speaker">
+            <div class="imageContainer centerTable-02">
+                <img src="./assets/ct-1.png" alt="A circular center table">
             </div>
             <div class="imageContainer sofa-03">
                 <img src="./assets/lg-sofa.png" alt="A white and yellow sofa 03">
             </div>
-            <div class="imageContainer plant">
-                <img src="./assets/plant-03.png" alt="A yellow pot with green leaves extending from it">
+            <div class="imageContainer plant" >
+                <img src="./assets/plant-03.png" alt="A yellow pot with green leaves extending from it" id="plantation">
             </div>
             <div class="imageContainer lamp-03">
-                <img src="./assets/fl-3.png" alt="A bowl of popcorn">
+                <img src="./assets/fl-3.png" alt="A bowl of popcorn" id="lampThree">
             </div>
-            <div class="imageContainer tea">
-                <img src="./assets/tea-03.png" alt="A small cup of tea">
+            <div class="imageContainer centerTable-03">
+                <img src="./assets/ct-3.png" alt="A small cup of centerTable 03">
             </div>
             <div class="imageContainer sofa-02">
                 <img src="./assets/sofa-1.png" alt="A navy blue two seater sofa">
@@ -172,6 +208,7 @@
     <!-- wrapper ends -->
 </main>
 <!-- main ends -->
+<div class="perspective"></div>
 
      <!-- jQuery library -->
      <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
