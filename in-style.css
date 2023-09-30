@@ -63,7 +63,8 @@ html {
   .swal-title,
   .swal-button {
     font-family: "Zilla Slab", serif;
-    text-transform: lowercase;
+    margin: 10px 2px;
+    border-radius: 30px;
   }
   
   h1,
@@ -91,7 +92,6 @@ html {
   
   main {
     height: 100vh;
-    padding-top: 10px;
   }
   
   .flexContainer {
@@ -233,6 +233,17 @@ html {
   #lampThree{
    display: none;
   }
+  #lampTwo{
+   display: none;
+  }
+  #lampOne{
+   display: none;
+  }
+  button:hover{
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 30px;
+  }
 
   
   .canvas .sofa{
@@ -292,14 +303,21 @@ html {
     right: 1100px;
     top: 1180px;
     position: absolute;
+    z-index: -4;
   }
 .canvas .lamp-03 {
     width: 35%;
-    left: 550px;
+    left: 570px;
     top: 980px;
     transform: scaleX(-1);
     position: absolute;
     z-index: -4;
+  }
+  .canvas .lamp-02{
+    width: 25%;
+    right: 1050px;
+    top: 1180px;
+    position: absolute;
   }
 
 
