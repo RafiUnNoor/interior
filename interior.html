@@ -56,21 +56,24 @@
     <!--wall size and color-->
 <div class="wall-size">
     <div class="control">
-    <input type="range" min="500" max="1260" value="500" class="slider" id="myRange">
+    <input type="range" min="500" max="1166" value="500" class="slider" id="myRange">
     <label aria-label="Adjust wall size" class="wallSize" for="myRange">Adjust wall size and color</label>
     <input type="color" id="myColor">
 </div>
     <div id="demo"></div>
+    <div class="perspective"></div>
 </div>
 <!--wall size and color ends-->
+
 
 <main>
     <!-- wrapper begins -->
     <div class="wrapper flexContainer">
         <!-- div for the form and options -->
         <div class="options">
-            <h2><span class="highlight">choose any lamp:</span></h2>
-            <form class="base" action="">
+            
+            <form class="accessories" action="">
+                <h2><span class="highlight">choose any lamp:</span></h2>
 
                 <button aria-hidden='true' class="item" name="" id="lamp1" value="lamp 01"> lamp 01</button>
 
@@ -82,8 +85,9 @@
                 
             </form>
 
-            <h2><span class="highlight">choose any sofa:</span></h2>
+            
             <form class="accessories" action="">
+                <h2><span class="highlight">choose any sofa:</span></h2>
 
                 <button aria-hidden='true' class="item" name="" id="sofa1" value="sofa 01"> Sofa 01</button>
 
@@ -96,8 +100,9 @@
 
             </form>
 
-                <h2><span class="highlight">choose any center table:</span></h2>
+                
                 <form class="accessories" action="">
+                    <h2><span class="highlight">choose any center table:</span></h2>
 
                     <button aria-hidden='true' class="item" name="" id="ct1" value="center table 01"> CTable 01</button>
 
@@ -108,8 +113,9 @@
                     <button aria-hidden='true' class="item" name="" id="ct4" value="center table 04"> CTable 04</button>
 
             </form>
-                <h2><span class="highlight">choose any accessories:</span></h2>
+                
                 <form class="accessories" action="">
+                    <h2><span class="highlight">choose any accessories:</span></h2>
                     
              <button aria-hidden="true" class="item animal" id="dog" value="dog">
                 <label aria-label="Click to add a animal" class="dog" for="dog">dog</label>
@@ -124,26 +130,24 @@
 
 
             </form>
-                <h2><span class="highlight">choose any bookshelf:</span></h2>
+
+                
                 <form class="accessories" action="">
+                    <h2><span class="highlight">choose any bookshelf:</span></h2>
 
-                    <input aria-hidden='true' class="item bookshelf" type="checkbox" id="bookshelf" value="bookshelf">
-                    <label aria-label="Click to add a bookshelf" class="bookshelf" for="bookshelf">bookshelf 01</label>
+                    <button aria-hidden='true' class="item" name="" id="bs1" value="book shelf 01"> Book Shelf 01</button>
 
-                    <input aria-hidden='true' class="item bookshelf" type="checkbox" id="bookshelf" value="bookshelf">
-                    <label aria-label="Click to add a bookshelf" class="bookshelf" for="bookshelf">bookshelf 02</label>
+                    <button aria-hidden='true' class="item" name="" id="bs2" value="book shelf 02"> Book Shelf 02</button>
 
-                    <input aria-hidden='true' class="item bookshelf" type="checkbox" id="bookshelf" value="bookshelf">
-                    <label aria-label="Click to add a bookshelf" class="bookshelf" for="bookshelf">bookshelf 03</label>
+                    <button aria-hidden='true' class="item" name="" id="bs3" value="book shelf 03"> Book Shelf 03</button>
 
-                    <input aria-hidden='true' class="item bookCabinet" type="checkbox" id="bookCabinet" value="bookCabinet">
-                    <label aria-label="Click to add a bookCabinet" class="bookCabinet" for="bookCabinet">book cabinet 01</label>
+                    <button aria-hidden='true' class="item" name="" id="bc1" value="book cabinet 01"> Book Cabinet 01</button>
 
-                    <input aria-hidden='true' class="item bookCabinet" type="checkbox" id="bookCabinet" value="bookCabinet">
-                    <label aria-label="Click to add a bookCabinet" class="bookCabinet" for="bookCabinet">book cabinet 02</label>
+                    <button aria-hidden='true' class="item" name="" id="bc2" value="book cabinet 02"> Book Cabinet 02</button>
 
-                    <input aria-hidden='true' class="item bookCabinet" type="checkbox" id="bookCabinet" value="bookCabinet">
-                    <label aria-label="Click to add a bookCabinet" class="bookCabinet" for="bookCabinet">book cabinet 03</label>
+                    <button aria-hidden='true' class="item" name="" id="bc3" value="book cabinet 03"> Book Cabinet 03</button>
+
+
 
 
             </form>
@@ -178,16 +182,16 @@
 
             <!--center table images-->
             <div class="imageContainer centerTable 04">
-                <img src="./assets/ct-5.png" alt="An open grey centerTable 04">
+                <img src="./assets/ct-5.png" alt="An open grey centerTable 04" id="ctOne">
             </div>
             <div class="imageContainer centerTable-02">
-                <img src="./assets/ct-1.png" alt="A circular center table">
+                <img src="./assets/ct-1.png" alt="A circular center table" id="ctTwo">
             </div>
             <div class="imageContainer centerTable-03">
-                <img src="./assets/ct-3.png" alt="A small cup of centerTable 03">
+                <img src="./assets/ct-3.png" alt="A small cup of centerTable 03" id="ctThree">
             </div>
             <div class="imageContainer centerTable">
-                <img src="./assets/ct-4.png" alt="A center table">
+                <img src="./assets/ct-4.png" alt="A center table" id="ctFour">
             </div>
 
 
@@ -203,6 +207,24 @@
             </div>
 
             <!--bookshelf images-->
+            <div class="imageContainer bookshelf">
+                <img src="./assets/bs-1.png" alt="A small aromatherapy diffuser" id="bsOne">
+            </div>
+            <div class="imageContainer bookshelf">
+                <img src="./assets/bs-2.png" alt="A brown bookshelf sleeping on a bookshelf bed" id="bsTwo">
+            </div>          
+            <div class="imageContainer bookshelf" >
+                <img src="./assets/bs-3.png" alt="A yellow pot with green leaves extending from it" id="bsThree">
+            </div>
+            <div class="imageContainer bookshelf" >
+                <img src="./assets/bc-1.png" alt="A yellow pot with green leaves extending from it" id="bcOne">
+            </div>
+            <div class="imageContainer bookshelf" >
+                <img src="./assets/bc-2.png" alt="A yellow pot with green leaves extending from it" id="bcTwo">
+            </div>
+            <div class="imageContainer bookshelf" >
+                <img src="./assets/bc-3.png" alt="A yellow pot with green leaves extending from it" id="bcThree">
+            </div>
 
 
         </div>
@@ -210,7 +232,7 @@
     <!-- wrapper ends -->
 </main>
 <!-- main ends -->
-<div class="perspective"></div>
+
 
      <!-- jQuery library -->
      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' ></script>
