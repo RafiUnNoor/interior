@@ -14,12 +14,18 @@ html {
     line-height: 1.6;
     font-weight: 300;
     margin-right: 20px;
+    margin-top: 50px;
   }
   
-  *,
-  h1 {
+  * {
     margin-right: 10px;
     padding: 0;
+  }
+  header h1{
+    text-align: center;
+    width: 70vw;
+    padding: 10px 100px ;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 40%, #f3e8e1 60%);
   }
   
   img {
@@ -44,12 +50,10 @@ html {
     line-height: 1;
   }
   
-  .highlight {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #f3e8e1 40%);
-  }
+ 
   
   h1 {
-    font-size: 6rem;
+    font-size: 40px;
     font-weight: 300;
     padding-bottom: 20px;
   }
@@ -96,12 +100,13 @@ html {
   }
   
   header {
-    height: 100vh;
+    height: 55vh;
+    margin-left: 100px;
   }
   
   header .wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
     height: 600px;
@@ -110,12 +115,15 @@ html {
   }
   
   header .writtenContent {
-    width: 70%;
-    padding: 250px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
   }
   
   header p {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   header button {
@@ -135,8 +143,8 @@ html {
   }
   
   header .imageContainer {
-    width: 280px;
-    margin-top: auto;
+    width: 45%;
+    opacity: .5;
   }
 
   .accessories{
@@ -167,7 +175,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 00px;
+    width: 300px;
   }
   form .center{
     display: flex;
@@ -228,25 +236,26 @@ html {
     border: 2px solid grey;
     border-radius: 30px;
   }
+ 
 
   
   .canvas .sofa{
     width: 45%;
     left: 180px;
-    top: 1550px;
+    top: 1230px;
     position: absolute;
   }
   .canvas .sofa-02{
     width: 43%;
     left: 150px;
-    top: 1470px;
+    top: 1150px;
     position: absolute;
     z-index: -5;
   }
   .canvas .sofa-03{
     width: 45%;
     left: 175px;
-    top: 1590px;
+    top: 1290px;
     position: absolute;
     z-index: -2;
     transform: rotateX('180deg');
@@ -254,53 +263,53 @@ html {
   .canvas .sofa-04{
     width: 45%;
     left: 160px;
-    top: 1450px;
+    top: 1150px;
     position: absolute;
     z-index: -3;
   }
   .canvas .plant{
     width: 12%;
     left: calc(100% - 650px);
-    top: 1450px;
+    top: 1150px;
     position: absolute;
     z-index: -4;
   }
 .canvas .centerTable {
     width: 30%;
     left: 255px;
-    top: 1520px;
+    top: 1220px;
     position: absolute;
   }
 .canvas .centerTable-04 {
     width: 30%;
     left: 255px;
-    top: 1540px;
+    top: 1240px;
     position: absolute;
   }
  
 .canvas .centerTable-02 {
     width: 24%;
     left: 255px;
-    top: 1600px;
+    top: 1300px;
     position: absolute;
   }
 .canvas .centerTable-03 {
     width: 24%;
     left: 305px;
-    top: 1580px;
+    top: 1280px;
     position: absolute;
   }
 .canvas .lamp {
     width: 25%;
     right: 1060px;
-    top: 1440px;
+    top: 1140px;
     position: absolute;
     z-index: -4;
   }
 .canvas .lamp-03 {
     width: 30%;
     left: 560px;
-    top: 1350px;
+    top: 1050px;
     transform: scaleX(-1);
     position: absolute;
     z-index: 1;
@@ -308,13 +317,13 @@ html {
   .canvas .lamp-02{
     width: 25%;
     right: 1050px;
-    top: 1440px;
+    top: 1140px;
     position: absolute;
   }
  
   #bsOne{
     width: 20%;
-    top: 1230px;
+    top: 900px;
     right: 800px;
     position: absolute;
     display: none;
@@ -322,7 +331,7 @@ html {
   }
   #bsTwo{
     width: 15%;
-    top: 1230px;
+    top: 910px;
     right: 800px;
     position: absolute;
     display: none;
@@ -330,7 +339,7 @@ html {
   }
   #bsThree{
     width: 30%;
-    top: 1240px;
+    top: 900px;
     right: 750px;
     position: absolute;
     display: none;
@@ -338,7 +347,7 @@ html {
   }
   #bcOne{
     width: 20%;
-    top: 1300px;
+    top: 1000px;
     right: 200px;
     position: absolute;
     display: none;
@@ -346,15 +355,36 @@ html {
   }
   #bcTwo{
     width: 20%;
-    top: 1300px;
+    top: 1000px;
     right: 200px;
     position: absolute;
     display: none;
   }
   #bcThree{
     width: 18%;
-    top: 1300px;
+    top: 1000px;
     right: 200px;
+    position: absolute;
+    display: none;
+  }
+  #clockOne{
+    width: 10%;
+    top: 970px;
+    right: 1150px;
+    position: absolute;
+    display: none;
+  }
+  #clockTwo{
+    width: 10%;
+    top: 970px;
+    right: 1150px;
+    position: absolute;
+    display: none;
+  }
+  #cat{
+    width: 15%;
+    top: 1500px;
+    right: 250px;
     position: absolute;
     display: none;
   }

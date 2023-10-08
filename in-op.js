@@ -15,6 +15,10 @@ $(document).ready(function(){
         event.preventDefault();
         $( "#plantation").toggle();
       });
+    $("#catBtn").on( "click", function( event ) {
+        event.preventDefault();
+        $( "#cat").toggle();
+      });
 
 
 //lamp selection
@@ -251,5 +255,33 @@ $( "#bs3" ).on( "click", function( event ) {
     }
   });
 //book shelf selection ends
+
+//clock selection starts
+
+$( "#clock1" ).on( "click", function( event ) {
+  event.preventDefault();
+  var clock1 = $("#clockOne");
+  var clock2 = $("#clockTwo");
+  
+  if (clock2.css("display") === "none") {
+        clock1.toggle() ;
+  } else {
+      alert("You can choose only one type of clock");
+  }
+});
+
+$( "#clock2" ).on( "click", function( event ) {
+  event.preventDefault();
+  var clock1 = $("#clockOne");
+  var clock2 = $("#clockTwo");
+  
+  if (clock1.css("display") === "none") {
+        clock2.toggle() ;
+  } else {
+      alert("You can choose only one type of clock");
+  }
+});
+
+//clock selection ends
 
 });
