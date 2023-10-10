@@ -11,6 +11,28 @@ $(document).ready(function(){
         $("#demo").css("background-color", colorValue);
     });
 
+    $("#living-button").on( "click", function( event ) {
+      event.preventDefault();
+      $( "#living-room").toggle();
+    });
+
+
+    $("#bedroom-button").on( "click", function( event ) {
+      event.preventDefault();
+      $( "#bed-room").toggle();
+    });
+
+
+    $("#tvroom-button").on( "click", function( event ) {
+      event.preventDefault();
+      $( "#tv-wall").toggle();
+    });
+
+
+
+
+    //Other selection
+
     $("#plantCanvas").on( "click", function( event ) {
         event.preventDefault();
         $( "#plantation").toggle();
@@ -20,6 +42,7 @@ $(document).ready(function(){
         $( "#cat").toggle();
       });
 
+//Other selection ends
 
 //lamp selection
     $( "#lamp3" ).on( "click", function( event ) {
