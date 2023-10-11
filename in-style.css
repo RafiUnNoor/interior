@@ -472,7 +472,84 @@ html {
   color: rgb(62, 84, 24);
   padding: 30px;
  }
- 
+
+
+
+
+
+
+
+ #bedOne {
+  position: absolute;
+  top: 1200px;
+  right: 300px;
+  display: none;
+ }
+ #bedTwo{
+  position: absolute;
+  width: 60%;
+  top: 1100px;
+  right: 300px;
+  display: none;
+ }
+ #bedThree{
+  position: absolute;
+  width: 45%;
+  top: 1200px;
+  right: 500px;
+  display: none;
+ }
+ #bedFour{
+  position: absolute;
+  width: 60%;
+  top: 1120px;
+  right: 350px;
+  display: none;
+ }
+
+ #bed-decoFour , #bed-decoThree , #bed-decoTwo , #bed-decoOne{
+  position: absolute;
+  width: 20%;
+  top: 880px;
+  right: 850px;
+  display: none;
+ }
+ #bed-backOne {
+  position: absolute;
+  width: 38%;
+  top: 850px;
+  right: 400px;
+  display: none;
+ }
+ #bed-backTwo , #bed-backThree {
+  position: absolute;
+  width: 30%;
+  height: 76%;
+  top: 850px;
+  right: 900px;
+  display: none;
+ }
+ #bed-backFour {
+  position: absolute;
+  width: 28%;
+  top: 850px;
+  right: 153px;
+  display: none;
+ }
+ #pcOne , #pcTwo{
+  position: absolute;
+  width: 32%;
+  top: 900px;
+  right: 300px;
+  display: none;
+ }
+ #plOne , #plTwo{
+  position: absolute;
+  width: 6%;
+  top: 830px;
+  right: 500px;
+  display: none;
+ }
 
 
   

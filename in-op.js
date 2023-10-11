@@ -307,4 +307,65 @@ $( "#clock2" ).on( "click", function( event ) {
 
 //clock selection ends
 
+
+//Bedroom Starts
+
+//bed selection starts
+$( "#bed1" ).on( "click", function( event ) {
+  event.preventDefault();
+  var bed2 = $("#bedTwo");
+  var bed3 = $("#bedThree");
+  var bed4 = $("#bedFour");
+  var bed1 = $("#bedOne");
+  
+  if (bed2.css("display") === "none" && bed4.css("display") === "none" && bed3.css("display") === "none" ) {
+        bed1.toggle() ;
+  } else {
+      alert("You can choose only one type of sofa");
+  }
+});
+
+$( "#bed2" ).on( "click", function( event ) {
+  event.preventDefault();
+  var bed2 = $("#bedTwo");
+  var bed3 = $("#bedThree");
+  var bed4 = $("#bedFour");
+  var bed1 = $("#bedOne");
+  
+  if (bed1.css("display") === "none" && bed4.css("display") === "none" && bed3.css("display") === "none" ) {
+        bed2.toggle() ;
+  } else {
+      alert("You can choose only one type of sofa");
+  }
+});
+
+$( "#bed3" ).on( "click", function( event ) {
+  event.preventDefault();
+  var bed2 = $("#bedTwo");
+  var bed3 = $("#bedThree");
+  var bed4 = $("#bedFour");
+  var bed1 = $("#bedOne");
+  
+  if (bed2.css("display") === "none" && bed4.css("display") === "none" && bed1.css("display") === "none" ) {
+        bed3.toggle() ;
+  } else {
+      alert("You can choose only one type of sofa");
+  }
+});
+
+$( "#bed4" ).on( "click", function( event ) {
+  event.preventDefault();
+  var bed2 = $("#bedTwo");
+  var bed3 = $("#bedThree");
+  var bed4 = $("#bedFour");
+  var bed1 = $("#bedOne");
+  
+  if (bed2.css("display") === "none" && bed1.css("display") === "none" && bed3.css("display") === "none" ) {
+        bed4.toggle() ;
+  } else {
+      alert("You can choose only one type of sofa");
+  }
+});
+//bed selection ends
+
 });
