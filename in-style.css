@@ -205,13 +205,22 @@ html {
   button{
     background-color: #f3e8e1;
     border: #f3e8e1;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 5px 20px;
     font-size: 20px;
     cursor: pointer;
   }
+  .item{
+    width: 100px;
+    height: 90px;
+    overflow: hidden;
+  }
   button img{
-    width: 50px;
+    width: 60px;
+  }
+  
+  .pdl1 , .pdl2{
+    width: 20px;
   }
 
   #plantation{
@@ -482,21 +491,21 @@ html {
  #bedOne {
   position: absolute;
   top: 1200px;
-  right: 300px;
+  right: 350px;
   display: none;
  }
  #bedTwo{
   position: absolute;
   width: 60%;
   top: 1100px;
-  right: 300px;
+  right: 350px;
   display: none;
  }
  #bedThree{
   position: absolute;
   width: 45%;
   top: 1200px;
-  right: 500px;
+  right: 450px;
   display: none;
  }
  #bedFour{
@@ -510,16 +519,17 @@ html {
  #bed-decoFour , #bed-decoThree , #bed-decoTwo , #bed-decoOne{
   position: absolute;
   width: 20%;
-  top: 880px;
-  right: 850px;
+  top: 870px;
+  right: 620px;
   display: none;
  }
  #bed-backOne {
   position: absolute;
   width: 38%;
   top: 850px;
-  right: 400px;
+  right: 500px;
   display: none;
+  z-index: -1;
  }
  #bed-backTwo , #bed-backThree {
   position: absolute;
@@ -528,26 +538,29 @@ html {
   top: 850px;
   right: 900px;
   display: none;
+  opacity: .6;
+  z-index: -1;
  }
  #bed-backFour {
   position: absolute;
-  width: 28%;
+  width: 29%;
   top: 850px;
-  right: 153px;
+  right: 145px;
   display: none;
+  z-index: -1;
  }
  #pcOne , #pcTwo{
   position: absolute;
   width: 32%;
   top: 900px;
-  right: 300px;
+  right: 150px;
   display: none;
  }
  #plOne , #plTwo{
   position: absolute;
   width: 6%;
-  top: 830px;
-  right: 500px;
+  top: 840px;
+  right: 1000px;
   display: none;
  }
 

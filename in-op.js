@@ -13,19 +13,44 @@ $(document).ready(function(){
 
     $("#living-button").on( "click", function( event ) {
       event.preventDefault();
-      $( "#living-room").toggle();
-    });
+      var living = $("#living-room");
+      var bedRoom = $("#bed-room");
+      var tvWall = $("#tv-wall");
 
+
+      if (bedRoom.css("display") === "none" && tvWall.css("display") === "none") {
+        living.toggle() ;
+  } else {
+      alert("Please select one type of indoor environment");
+  }
+    });
 
     $("#bedroom-button").on( "click", function( event ) {
       event.preventDefault();
-      $( "#bed-room").toggle();
-    });
+      var living = $("#living-room");
+      var bedRoom = $("#bed-room");
+      var tvWall = $("#tv-wall");
 
+
+      if (living.css("display") === "none" && tvWall.css("display") === "none") {
+        bedRoom.toggle() ;
+  } else {
+      alert("Please select one type of indoor environment");
+  }
+    });
 
     $("#tvroom-button").on( "click", function( event ) {
       event.preventDefault();
-      $( "#tv-wall").toggle();
+      var living = $("#living-room");
+      var bedRoom = $("#bed-room");
+      var tvWall = $("#tv-wall");
+
+
+      if (living.css("display") === "none" && bedRoom.css("display") === "none") {
+        tvWall.toggle() ;
+  } else {
+      alert("Please select one type of indoor environment");
+  }
     });
 
 
@@ -367,5 +392,175 @@ $( "#bed4" ).on( "click", function( event ) {
   }
 });
 //bed selection ends
+
+//bed decor selection starts
+$( "#bed-deco1" ).on( "click", function( event ) {
+  event.preventDefault();
+  var deco2 = $("#bed-decoTwo");
+  var deco3 = $("#bed-decoThree");
+  var deco4 = $("#bed-decoFour");
+  var deco1 = $("#bed-decoOne");
+  
+  if (deco2.css("display") === "none" && deco4.css("display") === "none" && deco3.css("display") === "none" ) {
+    deco1.toggle() ;
+  } else {
+      alert("You can choose only one type of decor");
+  }
+});
+
+$( "#bed-deco2" ).on( "click", function( event ) {
+  event.preventDefault();
+  var deco2 = $("#bed-decoTwo");
+  var deco3 = $("#bed-decoThree");
+  var deco4 = $("#bed-decoFour");
+  var deco1 = $("#bed-decoOne");
+  
+  if (deco1.css("display") === "none" && deco4.css("display") === "none" && deco3.css("display") === "none" ) {
+        deco2.toggle() ;
+  } else {
+      alert("You can choose only one type of decor");
+  }
+});
+
+$( "#bed-deco3" ).on( "click", function( event ) {
+  event.preventDefault();
+  var deco2 = $("#bed-decoTwo");
+  var deco3 = $("#bed-decoThree");
+  var deco4 = $("#bed-decoFour");
+  var deco1 = $("#bed-decoOne");
+  
+  if (deco2.css("display") === "none" && deco4.css("display") === "none" && deco1.css("display") === "none" ) {
+    deco3.toggle() ;
+  } else {
+      alert("You can choose only one type of decor");
+  }
+});
+
+$( "#bed-deco4" ).on( "click", function( event ) {
+  event.preventDefault();
+  var deco2 = $("#bed-decoTwo");
+  var deco3 = $("#bed-decoThree");
+  var deco4 = $("#bed-decoFour");
+  var deco1 = $("#bed-decoOne");
+  
+  if (deco2.css("display") === "none" && deco1.css("display") === "none" && deco3.css("display") === "none" ) {
+        deco4.toggle() ;
+  } else {
+      alert("You can choose only one type of decor");
+  }
+});
+//bed decor selection ends
+
+
+//bed panel selection starts
+$( "#bed-back1" ).on( "click", function( event ) {
+  event.preventDefault();
+  var panel2 = $("#bed-backTwo");
+  var panel3 = $("#bed-backThree");
+  var panel4 = $("#bed-backFour");
+  var panel1 = $("#bed-backOne");
+  
+  if (panel2.css("display") === "none" && panel4.css("display") === "none" && panel3.css("display") === "none" ) {
+    panel1.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+
+$( "#bed-back2" ).on( "click", function( event ) {
+  event.preventDefault();
+  var panel2 = $("#bed-backTwo");
+  var panel3 = $("#bed-backThree");
+  var panel4 = $("#bed-backFour");
+  var panel1 = $("#bed-backOne");
+  
+  if (panel1.css("display") === "none" && panel4.css("display") === "none" && panel3.css("display") === "none" ) {
+    panel2.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+
+$( "#bed-back3" ).on( "click", function( event ) {
+  event.preventDefault();
+  var panel2 = $("#bed-backTwo");
+  var panel3 = $("#bed-backThree");
+  var panel4 = $("#bed-backFour");
+  var panel1 = $("#bed-backOne");
+  
+  if (panel2.css("display") === "none" && panel4.css("display") === "none" && panel1.css("display") === "none" ) {
+    panel3.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+
+$( "#bed-back4" ).on( "click", function( event ) {
+  event.preventDefault();
+  var panel2 = $("#bed-backTwo");
+  var panel3 = $("#bed-backThree");
+  var panel4 = $("#bed-backFour");
+  var panel1 = $("#bed-backOne");
+  
+  if (panel2.css("display") === "none" && panel1.css("display") === "none" && panel3.css("display") === "none" ) {
+    panel4.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+//bed panel selection ends
+
+//other accesories selection starts
+$( "#ph-cl1" ).on( "click", function( event ) {
+  event.preventDefault();
+  var collage2 = $("#pcTwo");
+  var collage1 = $("#pcOne");
+  
+  if (collage2.css("display") === "none" ) {
+    collage1.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+
+$( "#ph-cl2" ).on( "click", function( event ) {
+  event.preventDefault();
+  var collage2 = $("#pcTwo");
+  var collage1 = $("#pcOne");
+  
+  if (collage1.css("display") === "none" ) {
+    collage2.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+
+$( "#pd-lt1" ).on( "click", function( event ) {
+  event.preventDefault();
+  var pdLight2 = $("#plTwo");
+  var pdLight1 = $("#plOne");
+  
+  if (pdLight2.css("display") === "none" ) {
+    pdLight1.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+$( "#pd-lt2" ).on( "click", function( event ) {
+  event.preventDefault();
+  var pdLight2 = $("#plTwo");
+  var pdLight1 = $("#plOne");
+  
+  if (pdLight1.css("display") === "none" ) {
+    pdLight2.toggle() ;
+  } else {
+      alert("You can choose only one type of panel");
+  }
+});
+
+
+
+
+//other accesories selection ends
 
 });
