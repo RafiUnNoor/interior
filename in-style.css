@@ -563,6 +563,52 @@ html {
   right: 1000px;
   display: none;
  }
+ #tvOne{
+  width: 80%;
+  position: absolute;
+  top: 900px;
+  display: none;
+ }
+ #tvTwo{
+  width: 75%;
+  right: 200px;
+  position: absolute;
+  top: 800px;
+  display: none;
+ }
+ #tvThree{
+  width: 70%;
+  right: 300px;
+  position: absolute;
+  top: 980px;
+  display: none;
+ }
+ #tvFour{
+  width: 80%;
+  height: 1000px;
+  right: 150px;
+  position: absolute;
+  top: 730px;
+  display: none;
+ }
+ #tvFive , #tvSix{
+  width: 60%;
+  right: 350px;
+  position: absolute;
+  top: 980px;
+  display: none;
+ }
+
+
+
+ #tvSeven{
+  width: 65%;
+  right: 300px;
+  position: absolute;
+  top: 810px;
+  display: none;
+  display: none;
+ }
 
 
   
