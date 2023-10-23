@@ -159,7 +159,6 @@ html {
     flex-direction:row;
     align-items: flex-start;
   }
-
   
   form {
     display: flex;
@@ -170,6 +169,13 @@ html {
     margin: 10px;
     width: 250px;
   }
+
+  .tv{
+    width: 350px;
+  }
+
+ 
+
   form .book{
     display: flex;
     flex-wrap: wrap;
@@ -200,12 +206,13 @@ html {
     justify-content: center;
     width: 200px;
   }
+  
 
 
   button{
     background-color: #f3e8e1;
     border: #f3e8e1;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 5px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -216,7 +223,7 @@ html {
     overflow: hidden;
   }
   button img{
-    width: 60px;
+    width: 70px;
   }
   
   .pdl1 , .pdl2{
@@ -602,13 +609,47 @@ html {
 
 
  #tvSeven{
-  width: 65%;
+  width: 60%;
   right: 300px;
   position: absolute;
-  top: 810px;
-  display: none;
+  top: 850px;
   display: none;
  }
 
-
+ #sitOne {
+  width: 30%;
+  right: 50px;
+  position: absolute;
+  top: 1150px;
+  display: none;
+ }
+ #sitTwo {
+  width: 30%;
+  right: 50px;
+  position: absolute;
+  top: 1000px;
+  display: none;
+ }
+ #sitThree {
+  width: 35%;
+  right: 950px;
+  position: absolute;
+  top: 1150px;
+  display: none;
+ }
+ #sitFive{
+  width: 38%;
+  right: 150px;
+  position: absolute;
+  top: 1250px;
+  display: none;
+ }
+ #sitFour , #sitSix{
+  width: 25%;
+  right: 150px;
+  position: absolute;
+  top: 1300px;
+  display: none;
+ }
+ 
   

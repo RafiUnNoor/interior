@@ -557,10 +557,232 @@ $( "#pd-lt2" ).on( "click", function( event ) {
       alert("You can choose only one type of panel");
   }
 });
-
-
-
-
 //other accesories selection ends
+
+
+
+
+//tv wall selection starts
+
+$("#tvPanel1").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none") {
+    tvFul1.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+$("#tvPanel2").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul1.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none") {
+    tvFul2.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+$("#tvPanel3").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul1.css("display") === "none" && tvFul2.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none") {
+    tvFul3.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+$("#tvPanel4").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul1.css("display") === "none" && tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none") {
+    tvFul4.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+$("#tvPanel5").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul1.css("display") === "none" && tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none") {
+    tvFul5.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+$("#tvPanel6").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul1.css("display") === "none" && tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul7.css("display") === "none") {
+    tvFul6.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+$("#tvPanel7").on("click", function(event){
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if (tvFul1.css("display") === "none" && tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none") {
+    tvFul7.toggle() ;
+  } else {
+      alert("You can choose only one type of TV Cabinet");
+  }
+})
+
+//tv wall selection ends
+//sitting selection starts
+
+$("#sitting1").on("click", function(event){
+  event.preventDefault();
+  var sitter1 =$("#sitOne");
+  var sitter2 =$("#sitTwo");
+  var sitter3 =$("#sitThree");
+  var sitter4 =$("#sitFour");
+  var sitter5 =$("#sitFive");
+  var sitter6 =$("#sitSix");
+  
+  if (sitter2.css("display") === "none" && sitter3.css("display") === "none" && sitter4.css("display") === "none" && sitter5.css("display") === "none" && sitter6.css("display") === "none" ) {
+    sitter1.toggle() ;
+  } else {
+      alert("You can choose only one type of sitting");
+  }
+})
+
+$("#sitting2").on("click", function(event){
+  event.preventDefault();
+  var sitter1 =$("#sitOne");
+  var sitter2 =$("#sitTwo");
+  var sitter3 =$("#sitThree");
+  var sitter4 =$("#sitFour");
+  var sitter5 =$("#sitFive");
+  var sitter6 =$("#sitSix");
+  
+  if (sitter1.css("display") === "none" && sitter3.css("display") === "none" && sitter4.css("display") === "none" && sitter5.css("display") === "none" && sitter6.css("display") === "none" ) {
+    sitter2.toggle() ;
+  } else {
+      alert("You can choose only one type of sitting");
+  }
+})
+
+$("#sitting3").on("click", function(event){
+  event.preventDefault();
+  var sitter1 =$("#sitOne");
+  var sitter2 =$("#sitTwo");
+  var sitter3 =$("#sitThree");
+  var sitter4 =$("#sitFour");
+  var sitter5 =$("#sitFive");
+  var sitter6 =$("#sitSix");
+  
+  if (sitter1.css("display") === "none" && sitter2.css("display") === "none" && sitter4.css("display") === "none" && sitter5.css("display") === "none" && sitter6.css("display") === "none" ) {
+    sitter3.toggle() ;
+  } else {
+      alert("You can choose only one type of sitting");
+  }
+})
+
+$("#sitting4").on("click", function(event){
+  event.preventDefault();
+  var sitter1 =$("#sitOne");
+  var sitter2 =$("#sitTwo");
+  var sitter3 =$("#sitThree");
+  var sitter4 =$("#sitFour");
+  var sitter5 =$("#sitFive");
+  var sitter6 =$("#sitSix");
+  
+  if (sitter1.css("display") === "none" && sitter2.css("display") === "none" && sitter3.css("display") === "none" && sitter5.css("display") === "none" && sitter6.css("display") === "none" ) {
+    sitter4.toggle() ;
+  } else {
+      alert("You can choose only one type of sitting");
+  }
+})
+
+$("#sitting5").on("click", function(event){
+  event.preventDefault();
+  var sitter1 =$("#sitOne");
+  var sitter2 =$("#sitTwo");
+  var sitter3 =$("#sitThree");
+  var sitter4 =$("#sitFour");
+  var sitter5 =$("#sitFive");
+  var sitter6 =$("#sitSix");
+  
+  if (sitter1.css("display") === "none" && sitter2.css("display") === "none" && sitter3.css("display") === "none" && sitter4.css("display") === "none" && sitter6.css("display") === "none" ) {
+    sitter5.toggle() ;
+  } else {
+      alert("You can choose only one type of sitting");
+  }
+})
+
+$("#sitting6").on("click", function(event){
+  event.preventDefault();
+  var sitter1 =$("#sitOne");
+  var sitter2 =$("#sitTwo");
+  var sitter3 =$("#sitThree");
+  var sitter4 =$("#sitFour");
+  var sitter5 =$("#sitFive");
+  var sitter6 =$("#sitSix");
+  
+  if (sitter1.css("display") === "none" && sitter2.css("display") === "none" && sitter3.css("display") === "none" && sitter4.css("display") === "none" && sitter5.css("display") === "none" ) {
+    sitter6.toggle() ;
+  } else {
+      alert("You can choose only one type of sitting");
+  }
+})
+
+
+//sitting selection ends
 
 });
