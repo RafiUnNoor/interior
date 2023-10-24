@@ -781,8 +781,145 @@ $("#sitting6").on("click", function(event){
       alert("You can choose only one type of sitting");
   }
 })
-
-
 //sitting selection ends
+
+
+//other selection starts
+
+$("#others1").on( "click", function( event ) {
+  event.preventDefault();
+  $( "#othOne").toggle();
+});
+$("#others2").on( "click", function( event ) {
+  event.preventDefault();
+  $( "#othTwo").toggle();
+});
+
+$("#others3").on("click", function(event){
+  event.preventDefault();
+  var tvLamp1 =$("#othThree");
+  var tvLamp2 =$("#othFour");
+  
+  if (tvLamp2.css("display") === "none" ) {
+    tvLamp1.toggle() ;
+  } else {
+      alert("You can choose only one type of lamp");
+  }
+})
+$("#others4").on("click", function(event){
+  event.preventDefault();
+  var tvLamp1 =$("#othThree");
+  var tvLamp2 =$("#othFour");
+  
+  if (tvLamp1.css("display") === "none" ) {
+    tvLamp2.toggle() ;
+  } else {
+      alert("You can choose only one type of lamp");
+  }
+})
+
+$("#others5").on("click", function(event){
+  event.preventDefault();
+  var tvPlant1 =$("#othFive");
+  var tvPlant2 =$("#othSix");
+  
+  if (tvPlant2.css("display") === "none" ) {
+    tvPlant1.toggle() ;
+  } else {
+      alert("You can choose only one type of plant");
+  }
+})
+$("#others6").on("click", function(event){
+  event.preventDefault();
+  var tvPlant1 =$("#othFive");
+  var tvPlant2 =$("#othSix");
+  
+  if (tvPlant1.css("display") === "none" ) {
+    tvPlant2.toggle() ;
+  } else {
+      alert("You can choose only one type of plant");
+  }
+})
+
+$("#others7").on( "click", function( event ) {
+  event.preventDefault();
+  $( "#othSeven").toggle();
+});
+$("#others8").on( "click", function( event ) {
+  event.preventDefault();
+  $( "#othEight").toggle();
+});
+$("#others9").on( "click", function( event ) {
+  event.preventDefault();
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+  var tv = $("#othNine")
+
+  if ( tvFul1.css("display") === "none" &&    tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none") {
+    tv.toggle() ;
+  } else {
+      alert("TV is already there in the cabinet");
+  }
+  
+});
+
+//Low Panel Section starts
+
+$("#low_cabinet1").on("click", function(event){
+  event.preventDefault();
+  var lowCab1 =$("#hcOne");
+  var lowCab2 =$("#hcTwo");
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if ( tvFul1.css("display") === "none" &&    tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none" && lowCab2.css("display") === "none") {
+    lowCab1.toggle() ;
+  } else {
+      alert("There is already a full cabinet there");
+  }
+
+})
+
+$("#low_cabinet2").on("click", function(event){
+  event.preventDefault();
+  var lowCab1 =$("#hcOne");
+  var lowCab2 =$("#hcTwo");
+  var tvFul1 =$("#tvOne");
+  var tvFul2 =$("#tvTwo");
+  var tvFul3 =$("#tvThree");
+  var tvFul4 =$("#tvFour");
+  var tvFul5 =$("#tvFive");
+  var tvFul6 =$("#tvSix");
+  var tvFul7 =$("#tvSeven");
+
+  if ( tvFul1.css("display") === "none" &&    tvFul2.css("display") === "none" && tvFul3.css("display") === "none" && tvFul4.css("display") === "none" && tvFul5.css("display") === "none" && tvFul6.css("display") === "none" && tvFul7.css("display") === "none" && lowCab1.css("display") === "none") {
+    lowCab2.toggle() ;
+  } else {
+      alert("There is already a full cabinet there");
+  }
+})
+
+$("#low_cabinet3").on("click", function(event){
+  event.preventDefault();
+  var lowCab1 =$("#hcOne");
+  var lowCab2 =$("#hcTwo");
+  var lowCab3 =$("#hcThree");
+  
+  if (lowCab1.css("display") === "block" || lowCab2.css("display") === "block" ) {
+    lowCab3.toggle() ;
+  } else {
+      alert("You can choose only one type of half cabinet");
+  }
+})
 
 });

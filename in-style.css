@@ -526,14 +526,14 @@ html {
  #bed-decoFour , #bed-decoThree , #bed-decoTwo , #bed-decoOne{
   position: absolute;
   width: 20%;
-  top: 870px;
+  top: 880px;
   right: 620px;
   display: none;
  }
  #bed-backOne {
   position: absolute;
   width: 38%;
-  top: 850px;
+  top: 865px;
   right: 500px;
   display: none;
   z-index: -1;
@@ -541,8 +541,8 @@ html {
  #bed-backTwo , #bed-backThree {
   position: absolute;
   width: 30%;
-  height: 76%;
-  top: 850px;
+  height: 73%;
+  top: 866px;
   right: 900px;
   display: none;
   opacity: .6;
@@ -572,15 +572,16 @@ html {
  }
  #tvOne{
   width: 80%;
+  right: 200px;
   position: absolute;
   top: 900px;
   display: none;
  }
  #tvTwo{
-  width: 75%;
-  right: 200px;
+  width: 55%;
+  right: 350px;
   position: absolute;
-  top: 800px;
+  top: 920px;
   display: none;
  }
  #tvThree{
@@ -651,5 +652,88 @@ html {
   top: 1300px;
   display: none;
  }
+
+ #othOne{
+  width: 30%;
+  right: 700px;
+  position: absolute;
+  top: 1150px;
+  display: none;
+  z-index: 2;
+ }
+ #othTwo{
+  width: 26%;
+  right: 630px;
+  position: absolute;
+  top: 850px;
+  display: none;
+  z-index: -1;
+ }
+ #othThree , #othFour{
+  width: 9%;
+  right: 200px;
+  position: absolute;
+  top: 1150px;
+  display: none;
+  z-index: -1;
+ }
+ #othFive {
+  width: 17%;
+  right: 1130px;
+  position: absolute;
+  top: 1070px;
+  display: none;
+  z-index: -1;
+ }
+ #othSix {
+  width: 12%;
+  right: 1150px;
+  position: absolute;
+  top: 1150px;
+  display: none;
+  z-index: -1;
+ }
+ #othSeven{
+  width: 18%;
+  right: 1070px;
+  position: absolute;
+  top: 1090px;
+  display: none;
+  z-index: -2;
+ }
+ #othEight{
+  width: 10%;
+  right: 140px;
+  position: absolute;
+  top: 1010px;
+  display: none;
+  z-index: -2;
+ }
+ #othNine{
+  width: 25%;
+  right: 580px;
+  position: absolute;
+  top: 1050px;
+  display: none;
+ }
+
+
+ #hcOne , #hcTwo{
+  width: 80%;
+  right: 200px;
+  position: absolute;
+  top: 950px;
+  display: none;
+  z-index: -1;
+ }
+ #hcThree{
+  width: 50%;
+  right: 450px;
+  position: absolute;
+  top: 860px;
+  display: none;
+ }
+ 
+
  
   
