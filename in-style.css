@@ -100,17 +100,58 @@ html {
   
   header {
     height: 55vh;
-    margin-left: 100px;
+    margin-left: 200px;
+  }
+  header h1{
+    position: relative;
+    background: none;
+    top: 660px;
+    left: -100px;
+    text-decoration: underline 2px solid rgb(40, 81, 127);
+    letter-spacing: 8px;
+    text-transform: uppercase;
   }
   
-  header .wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: 600px;
-    width: 1200px;
-    margin-bottom: 20px;
+  
+  header .wrapper .floor-head{
+    position: absolute;
+    top: 0px;
+    width: 70%;
+  }
+  header .wrapper .wall{
+    position: absolute;
+    width: 70%;
+    top: 0px;
+  }
+  header .wrapper .sofa{
+    position: absolute;
+    top: 380px;
+    left: 450px;
+    width: 35%;
+  }
+  header .wrapper .frontTable{
+    width: 18%;
+    position: absolute;
+    top: 380px;
+    left: 450px;
+  }
+  header .wrapper .pen-light{
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    left: 450px;
+  }
+  header .wrapper .plant{
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    width: 20%;
+  }
+  header .wrapper .sideTable{
+    position: absolute;
+    top: 280px;
+    left: 280px;
+    width: 15%;
   }
   
   header .writtenContent {
