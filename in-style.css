@@ -9,7 +9,7 @@ html {
   }
 
   body {
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", serif;
     font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 300;
@@ -22,144 +22,166 @@ html {
     margin-right: 10px;
     padding: 0;
   }
-  header {
-    height: 57vh;
-    margin-left: 300px; 
-  }
-  section{
-    margin-left: 50px;
+
+  @media screen and (min-width: 900px) and (max-width: 1480px) {
+    header {
+      height: 50%;
+      margin-left: 5%; 
+    }
+    section{
+      margin-left: 5vw;
+    }
+    header h1{
+      position: absolute;
+      margin-top: 35%;
+      margin-left: 20%;
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-size: 2vw;
+      width: 70%;
+      padding: 2vw;
+      background: none;
+      text-decoration: underline 2px solid rgb(40, 81, 127);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    header button{
+      position: relative;
+      margin-top: 45%;
+      margin-left: 25%;
+      width: 45%;
+      font-family: "Poppins", serif;
+      font-size: 1.2vw;
+      font-weight: 200;
+    }
+    header .wrapper{
+      width: 100vw;
+      margin-left: 20vw;
+    }
+    header button:hover{
+      background-color: #f3e8e1;
+      cursor: pointer;
+    }
+    header .wrapper .floor-head{
+      position: absolute;
+      width: 50%;
+    }
+    header .wrapper .wall{
+      position: absolute;
+      width: 50%;
+    }
+    header .wrapper .sofa{
+      position: absolute;
+      margin-top: 20%;
+      margin-left: 12%;
+      height: auto;
+      width: 25%;
+    }
+    header .wrapper .frontTable{
+      width: 12%;
+      position: absolute;
+      margin-top: 20%;
+      margin-left: 15%;
+    }
+    header .wrapper .pen-light{
+      width: 20%;
+      position: absolute;
+      margin-top: 1%;
+      margin-left: 15%;
+    }
+    header .wrapper .plant{
+      position: absolute;
+      margin-top: 12%;
+      margin-left: 35%;
+      width: 15%;
+    }
+    header .wrapper .sideTable{
+      position: absolute;
+      margin-top: 12%;
+      margin-left: 2%;
+      width: 12%;
+    }
   }
 
-
-  header h1{
-    position: relative;
-    top: 510px;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    margin: 10px;
-    width: 65vw;
-    padding: 10px  ;
-    background: none;
-    text-decoration: underline 2px solid rgb(40, 81, 127);
-    letter-spacing: 4px;
-    text-transform: uppercase;
+  @media screen and (max-width: 900px) {
+    header {
+      height: 50%;
+      margin-left: 5%; 
+    }
+    section{
+      margin-left: 5vw;
+    }
+    header h1{
+      position: absolute;
+      margin-top: 65%;
+      margin-left: 28%;
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-size: 2.6vw;
+      width: 70%;
+      padding: 2vw;
+      background: none;
+      text-decoration: underline 2px solid rgb(40, 81, 127);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    header button{
+      position: relative;
+      margin-top: 82%;
+      margin-left: 37%;
+      width: 60%;
+      font-family: "Poppins", serif;
+      font-size: 1.8vw;
+      font-weight: 200;
+    }
+    header .wrapper{
+      width: 100vw;
+      margin-left: 12%;
+    }
+    header button:hover{
+      background-color: #f3e8e1;
+      cursor: pointer;
+    }
+    header .wrapper .floor-head{
+      position: absolute;
+      width: 90vw;
+    }
+    header .wrapper .wall{
+      position: absolute;
+      width: 90vw;
+    }
+    header .wrapper .sofa{
+      position: absolute;
+      margin-top: 40%;
+      margin-left: 26%;
+      height: auto;
+      width: 40%;
+    }
+    header .wrapper .frontTable{
+      width: 20%;
+      position: absolute;
+      margin-top: 40%;
+      margin-left: 30%;
+    }
+    header .wrapper .pen-light{
+      width: 30%;
+      position: absolute;
+      margin-top: 5%;
+      margin-left: 28%;
+    }
+    header .wrapper .plant{
+      position: absolute;
+      margin-top: 25%;
+      margin-left: 65%;
+      width: 25%;
+    }
+    header .wrapper .sideTable{
+      position: absolute;
+      margin-top: 25%;
+      margin-left: 6%;
+      width: 20%;
+    }
   }
-  header button{
-    position: relative;
-    margin-left: 220px;
-    top: 490px;
-    font-family: "Poppins", serif;
-    font-size: 20px;
-    font-weight: 200;
-  }
-  header button:hover{
-    background-color: #f3e8e1;
-    cursor: pointer;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  label,
-  .swal-title,
-  .swal-button {
-    font-family: "Poppins", serif;
-    margin: 10px 2px;
-    border-radius: 30px;
-  }
-  
-  h2 {
-    line-height: 1;
-  }
-  
-  h2 {
-    font-weight: 400;
-    font-size: 18px;
-    position: relative;
-    margin: 0px 20px;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .swal-title,
-  .swal-button {
-    font-weight: 300;
-  }
-  
-  .swal-title {
-    font-size: 2.4rem;
-  }
-  
-  .swal-button {
-    transition: all 0.5s ease;
-    background-color: transparent;
-    color: black;
-    border: 1px solid black;
-    padding: 8px 0;
-    font-size: 1.6rem;
-    width: 120px;
-    border-radius: 0;
-  }
-  
-  .swal-button:not([disabled]):hover,
-  .swal-button:not([disabled]):focus {
-    background-color: #f3e8e1;
-    cursor: pointer;
-  }
-  
-  .swal-footer {
-    text-align: center;
-    margin-top: 0;
-    padding-top: 0;
-  }
-  
-  
-  
-  header .wrapper .floor-head{
-    position: absolute;
-    top: 0px;
-    width: 70%;
-  }
-  header .wrapper .wall{
-    position: absolute;
-    width: 70%;
-    top: 0px;
-  }
-  header .wrapper .sofa{
-    position: absolute;
-    top: 280px;
-    left: 170px;
-    width: 35%;
-  }
-  header .wrapper .frontTable{
-    width: 11%;
-    position: absolute;
-    top: 360px;
-    left: 500px;
-  }
-  header .wrapper .pen-light{
-    width: 25%;
-    position: absolute;
-    top: 15px;
-    left: 230px;
-  }
-  header .wrapper .plant{
-    position: absolute;
-    top: 190px;
-    left: 520px;
-    width: 20%;
-  }
-  header .wrapper .sideTable{
-    position: absolute;
-    top: 200px;
-    left: 30px;
-    width: 15%;
-  }
-  
-
   .animatable {
     
     /* initially hide animatable objects */
@@ -354,6 +376,31 @@ html {
   .accessories{
     display: flex;
     flex-direction: column;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  label {
+    font-family: "Poppins", serif;
+    margin: 10px 2px;
+    border-radius: 30px;
+  }
+  
+  h2 {
+    line-height: 1;
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    text-align: center;
   }
 
 
@@ -663,19 +710,20 @@ html {
   align-items: center;
   background-color: rgb(218, 230, 196);
   margin-top: 50px;
+  width: 100vw;
   
  }
  footer h2 , h3{
   margin-top: 15px;
   color: darkslategrey;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 2vw;
   line-height: 1.5;
  }
  footer p{
-  width: 80%;
+  width: 80vw;
   color: darkslategrey;
-  font-size: 18px;
+  font-size: 1.20vw;
   font-weight: 400;
   margin: 10px;
  }
@@ -693,7 +741,7 @@ footer ul li a{
   text-decoration: none;
   color: rgb(62, 84, 24);
   padding: 0 30px;
-  font-size: 48px;
+  font-size: 4vw;
  }
 
  ul{
