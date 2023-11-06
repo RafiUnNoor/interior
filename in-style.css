@@ -3,41 +3,29 @@
 
 
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-  }
 
   body {
     font-family: "Poppins", serif;
-    font-size: 1.6rem;
     line-height: 1.6;
-    font-weight: 300;
-    margin-right: 20px;
-    margin-top: 50px;
     background-color: #f1f7fe;
+    height: auto;
+    margin: auto;
   }
   
-  * {
-    margin-right: 10px;
-    padding: 0;
-  }
+  
 
-  @media screen and (min-width: 900px) and (max-width: 1480px) {
+  @media screen and (min-width: 900px)  {
     header {
-      height: 50%;
-      margin-left: 5%; 
+      width: 70%;
     }
-    section{
-      margin-left: 5vw;
-    }
+    
     header h1{
       position: absolute;
-      margin-top: 35%;
-      margin-left: 20%;
+      margin-top: 42%;
+      margin-left: 22%;
       font-family: "Poppins", serif;
       font-weight: 400;
-      font-size: 2vw;
+      font-size: 2.5vw;
       width: 70%;
       padding: 2vw;
       background: none;
@@ -47,16 +35,17 @@ html {
     }
     header button{
       position: relative;
-      margin-top: 45%;
-      margin-left: 25%;
-      width: 45%;
+      margin-top: 68%;
+      margin-left: 45%;
+      width: 50%;
       font-family: "Poppins", serif;
       font-size: 1.2vw;
       font-weight: 200;
     }
     header .wrapper{
-      width: 100vw;
+      width: 100%;
       margin-left: 20vw;
+      align-items: center;
     }
     header button:hover{
       background-color: #f3e8e1;
@@ -64,124 +53,143 @@ html {
     }
     header .wrapper .floor-head{
       position: absolute;
-      width: 50%;
+      width: 85%;
     }
     header .wrapper .wall{
       position: absolute;
-      width: 50%;
+      width: 85%;
     }
     header .wrapper .sofa{
       position: absolute;
-      margin-top: 20%;
-      margin-left: 12%;
-      height: auto;
-      width: 25%;
-    }
-    header .wrapper .frontTable{
-      width: 12%;
-      position: absolute;
-      margin-top: 20%;
-      margin-left: 15%;
-    }
-    header .wrapper .pen-light{
-      width: 20%;
-      position: absolute;
-      margin-top: 1%;
-      margin-left: 15%;
-    }
-    header .wrapper .plant{
-      position: absolute;
-      margin-top: 12%;
-      margin-left: 35%;
-      width: 15%;
-    }
-    header .wrapper .sideTable{
-      position: absolute;
-      margin-top: 12%;
-      margin-left: 2%;
-      width: 12%;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    header {
-      height: 50%;
-      margin-left: 5%; 
-    }
-    section{
-      margin-left: 5vw;
-    }
-    header h1{
-      position: absolute;
-      margin-top: 65%;
-      margin-left: 28%;
-      font-family: "Poppins", serif;
-      font-weight: 400;
-      font-size: 2.6vw;
-      width: 70%;
-      padding: 2vw;
-      background: none;
-      text-decoration: underline 2px solid rgb(40, 81, 127);
-      letter-spacing: 4px;
-      text-transform: uppercase;
-    }
-    header button{
-      position: relative;
-      margin-top: 82%;
-      margin-left: 37%;
-      width: 60%;
-      font-family: "Poppins", serif;
-      font-size: 1.8vw;
-      font-weight: 200;
-    }
-    header .wrapper{
-      width: 100vw;
-      margin-left: 12%;
-    }
-    header button:hover{
-      background-color: #f3e8e1;
-      cursor: pointer;
-    }
-    header .wrapper .floor-head{
-      position: absolute;
-      width: 90vw;
-    }
-    header .wrapper .wall{
-      position: absolute;
-      width: 90vw;
-    }
-    header .wrapper .sofa{
-      position: absolute;
-      margin-top: 40%;
-      margin-left: 26%;
+      margin-top: 34%;
+      margin-left: 22%;
       height: auto;
       width: 40%;
     }
     header .wrapper .frontTable{
-      width: 20%;
+      width: 12%;
       position: absolute;
-      margin-top: 40%;
-      margin-left: 30%;
+      margin-top: 27%;
+      margin-left: 20%;
     }
     header .wrapper .pen-light{
-      width: 30%;
+      width: 28%;
       position: absolute;
-      margin-top: 5%;
-      margin-left: 28%;
+      margin-top: 1%;
+      margin-left: 29%;
     }
     header .wrapper .plant{
       position: absolute;
-      margin-top: 25%;
-      margin-left: 65%;
+      margin-top: 23%;
+      margin-left: 60%;
       width: 25%;
     }
     header .wrapper .sideTable{
       position: absolute;
       margin-top: 25%;
-      margin-left: 6%;
-      width: 20%;
+      margin-left: 4%;
+      width: 18%;
+    }
+
+
+    section{
+      margin-top: -20%;
+      margin-left: 10%;
+      margin-bottom: 10%;
+      width: 90%;
+      height: fit-content;
+    }
+
+     .options {
+      margin-top: 2%;
+      width: 100%;
+      display: flex;
+      flex-direction:row;
+      align-items: flex-start;
+      height: fit-content;
+    }
+
+    .select_buttons{
+      width: 90%;
+     }
+     .select_buttons ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+     }
+     form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 10px;
+      width: 90%;
+    }
+
+    button{
+      background-color: #f3e8e1;
+      border: #f3e8e1;
+      border-radius: 5px;
+      padding: 5px 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .item{
+      width: 100px;
+      height: 90px;
+      overflow: hidden;
+      margin: 5px;
+    }
+    button img{
+      width: 70px;
     }
   }
+
+
+  footer{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 230, 196);
+    width: 100%;
+    margin: auto; 
+   }
+   footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+  }
+  ul li{
+    text-decoration: none;
+  }
+  footer ul li a{
+    text-decoration: none;
+    color: rgb(62, 84, 24);
+    padding: 0 30px;
+    font-size: 4vw;
+   }
+
+   footer h2 , h3{
+    margin-top: 15px;
+    color: darkslategrey;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 1.5;
+   }
+   footer p{
+    width: 90%;
+    color: darkslategrey;
+    font-size: 1.20vw;
+    font-weight: 400;
+    margin: 10px;
+   }
+
   .animatable {
     
     /* initially hide animatable objects */
@@ -373,11 +381,13 @@ html {
 }
   
 
+
+
   .accessories{
     display: flex;
     flex-direction: column;
   }
-
+  
   img {
     max-width: 100%;
     height: auto;
@@ -404,143 +414,39 @@ html {
   }
 
 
-  
-  .options {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-    align-items: flex-start;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 10px;
-    width: 250px;
-  }
-
-  .tv{
-    width: 350px;
-  }
-
- 
-
-  form .book{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 300px;
-  }
-  form .center{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 300px;
-  }
-  form .sit{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 300px;
-  }
-  form .light{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 300px;
-  }
-  form .extra{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 200px;
-  }
-  
-
-
-  button{
-    background-color: #f3e8e1;
-    border: #f3e8e1;
-    border-radius: 5px;
-    padding: 5px 20px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .item{
-    width: 100px;
-    height: 90px;
-    overflow: hidden;
-    margin: 5px;
-  }
-  button img{
-    width: 70px;
-  }
-  
-  .pdl1 , .pdl2{
-    width: 20px;
-  }
-
-  #plantation{
-    display: none;
-  }
-
-  #lampOne, #lampTwo, #lampThree  {
-   display: none;
-  }
- 
-  #sofaOne ,#sofaTwo,#sofaThree,#sofaFour{
-   display: none;
-  }
-  #ctOne, #ctTwo, #ctThree, #ctFour{
-   display: none;
-  }
-
-
-  button:hover{
-    background-color: white;
-    border: 2px solid grey;
-    border-radius: 30px;
-  }
- 
-
-  
   .canvas .sofa{
-    width: 45%;
-    left: 230px;
-    top: 1250px;
     position: absolute;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 0%;
   }
+
   .canvas .sofa-02{
     width: 45%;
-    left: 220px;
-    top: 1170px;
+    margin-left: 8%;
+    margin-top: -7%;
     position: absolute;
     z-index: -5;
   }
   .canvas .sofa-03{
-    width: 50%;
-    left: 220px;
-    top: 1300px;
-    position: absolute;
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 3%;
     z-index: -2;
     transform: rotateX('180deg');
   }
   .canvas .sofa-04{
-    width: 45%;
-    left: 230px;
-    top: 1170px;
+    width: 40%;
+    margin-left: 7%;
+    margin-top: -10%;
     position: absolute;
     z-index: -3;
   }
   .canvas .plant{
-    width: 12%;
-    left: 810px;
-    top: 1170px;
     position: absolute;
+    width: 9%;
+    margin-left: 38%;
+    margin-top: 8%;
     z-index: -4;
   }
 .canvas .centerTable {
@@ -641,7 +547,41 @@ html {
     position: absolute;
     display: none;
   }
+ 
 
+  .tv{
+    width: 350px;
+  }
+  .pdl1 , .pdl2{
+    width: 20px;
+  }
+
+  #plantation{
+    display: none;
+  }
+
+  #lampOne, #lampTwo, #lampThree  {
+   display: none;
+  }
+ 
+  #sofaOne ,#sofaTwo,#sofaThree,#sofaFour{
+   display: none;
+  }
+  #ctOne, #ctTwo, #ctThree, #ctFour{
+   display: none;
+  }
+
+
+  button:hover{
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 30px;
+  }
+ 
+
+  
+
+  
 
 
   #demo{
@@ -703,296 +643,355 @@ html {
     font-size: 24px;
     background-color: rgb(232, 246, 251);
   }
- footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(218, 230, 196);
-  margin-top: 50px;
-  width: 100vw;
-  
- }
- footer h2 , h3{
-  margin-top: 15px;
-  color: darkslategrey;
-  font-weight: 700;
-  font-size: 2vw;
-  line-height: 1.5;
- }
- footer p{
-  width: 80vw;
-  color: darkslategrey;
-  font-size: 1.20vw;
-  font-weight: 400;
-  margin: 10px;
- }
- footer ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-}
-ul li{
-  text-decoration: none;
-}
-footer ul li a{
-  text-decoration: none;
-  color: rgb(62, 84, 24);
-  padding: 0 30px;
-  font-size: 4vw;
- }
-
- ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-
-
-
+ 
 
 
 
 
  #bedOne {
   position: absolute;
-  top: 1200px;
-  right: 350px;
+  width: 50%;
+  right: 30%;
+  top: 148%;
   display: none;
  }
  #bedTwo{
   position: absolute;
-  width: 60%;
-  top: 1100px;
-  right: 350px;
+  width: 50%;
+  right: 30%;
+  top: 135%;
   display: none;
  }
  #bedThree{
   position: absolute;
-  width: 45%;
-  top: 1200px;
-  right: 450px;
+  width: 40%;
+  right: 35%;
+  top: 145%;
   display: none;
  }
  #bedFour{
   position: absolute;
-  width: 60%;
-  top: 1120px;
-  right: 350px;
+  width: 50%;
+  right: 30%;
+  top: 140%;
   display: none;
  }
 
  #bed-decoFour , #bed-decoThree , #bed-decoTwo , #bed-decoOne{
   position: absolute;
-  width: 20%;
-  top: 900px;
-  right: 610px;
+  width: 13%;
+  right: 48%;
+  top: 116%;
   display: none;
  }
  #bed-backOne {
   position: absolute;
-  width: 38%;
-  top: 880px;
-  right: 500px;
+  width: 24%;
+  right: 43%;
+  top: 116%;
   display: none;
   z-index: -1;
  }
  #bed-backTwo , #bed-backThree {
   position: absolute;
-  width: 30%;
-  height: 73%;
-  top: 882px;
-  right: 850px;
+  width: 24%;
+  right: 43%;
+  top: 116%;
+  height: 60%;
   display: none;
   opacity: .6;
   z-index: -1;
  }
  #bed-backFour {
   position: absolute;
-  width: 29%;
-  top: 880px;
-  right: 100px;
+  width: 24%;
+  right: 43%;
+  top: 116%;
   display: none;
   z-index: -1;
  }
  #pcOne , #pcTwo{
   position: absolute;
-  width: 32%;
-  top: 900px;
-  right: 150px;
+  width: 20%;
+  right: 25%;
+  top: 118%;
   display: none;
  }
  #plOne , #plTwo{
   position: absolute;
-  width: 6%;
-  top: 865px;
-  right: 1000px;
+  width: 5%;
+  right: 35%;
+  top: 114%;
   display: none;
  }
  #tvOne{
-  width: 80%;
-  right: 200px;
+  width: 60%;
+  right: 30%;
   position: absolute;
-  top: 900px;
+  top: 120%;
   display: none;
  }
  #tvTwo{
-  width: 55%;
-  right: 350px;
+  width: 40%;
+  right: 40%;
   position: absolute;
-  top: 920px;
+  top: 123%;
   display: none;
  }
  #tvThree{
-  width: 70%;
-  right: 280px;
+  width: 60%;
+  right: 30%;
   position: absolute;
-  top: 980px;
+  top: 120%;
   display: none;
  }
  #tvFour{
-  width: 80%;
+  width: 70%;
   height: 1000px;
-  right: 150px;
+  right: 21%;
   position: absolute;
-  top: 740px;
+  top: 101%;
   display: none;
  }
  #tvFive , #tvSix{
   width: 60%;
-  right: 350px;
+  right: 25%;
   position: absolute;
-  top: 980px;
+  top: 118%;
   display: none;
  }
  #tvSeven{
-  width: 60%;
-  right: 300px;
+  width: 47%;
+  right: 35%;
   position: absolute;
-  top: 850px;
+  top: 111%;
   display: none;
  }
 
  #sitOne {
-  width: 30%;
-  right: 40px;
+  width: 25%;
+  right: 18%;
+  top: 145%;
   position: absolute;
-  top: 1150px;
   display: none;
  }
  #sitTwo {
-  width: 30%;
-  right: 40px;
+  width: 22%;
+  right: 20%;
+  top: 135%;
   position: absolute;
-  top: 1000px;
   display: none;
  }
  #sitThree {
-  width: 35%;
-  right: 860px;
+  width: 25%;
+  right: 68%;
+  top: 145%;
   position: absolute;
-  top: 1150px;
   display: none;
  }
  #sitFive{
-  width: 38%;
-  right: 130px;
+  width: 25%;
+  right: 25%;
+  top: 162%;
   position: absolute;
-  top: 1270px;
   display: none;
  }
  #sitFour , #sitSix{
-  width: 25%;
-  right: 130px;
+  width: 20%;
+  right: 25%;
+  top: 160%;
   position: absolute;
-  top: 1320px;
   display: none;
  }
 
  #othOne{
-  width: 27%;
-  right: 600px;
+  width: 20%;
+  right: 55%;
+  top: 150%;
   position: absolute;
-  top: 1200px;
   display: none;
   z-index: 2;
  }
  #othTwo{
-  width: 26%;
-  right: 630px;
+  width: 20%;
+  right: 45%;
+  top: 113%;
   position: absolute;
-  top: 863px;
   display: none;
   z-index: -1;
  }
  #othThree , #othFour{
-  width: 9%;
-  right: 100px;
+  width: 8%;
+  right: 25%;
+  top: 140%;
   position: absolute;
-  top: 1150px;
   display: none;
   z-index: -1;
  }
  #othFive {
-  width: 17%;
-  right: 1100px;
+  width: 15%;
+  right: 75%;
+  top: 125%;
   position: absolute;
-  top: 1090px;
   display: none;
   z-index: -1;
  }
  #othSix {
-  width: 12%;
-  right: 1120px;
+  width: 10%;
+  right: 78%;
+  top: 140%;
   position: absolute;
-  top: 1180px;
   display: none;
   z-index: -1;
  }
  #othSeven{
-  width: 18%;
-  right: 1020px;
+  width: 10%;
+  right: 25%;
+  top: 150%;
   position: absolute;
-  top: 1090px;
   display: none;
   z-index: -2;
  }
  #othEight{
-  width: 10%;
-  right: 140px;
+  width: 8%;
+  right: 25%;
+  top: 128%;
   position: absolute;
-  top: 1040px;
   display: none;
   z-index: -2;
  }
  #othNine{
-  width: 25%;
-  right: 450px;
+  width: 22%;
+  right: 44%;
+  top: 135%;
   position: absolute;
-  top: 1080px;
   display: none;
  }
 
 
  #hcOne , #hcTwo{
-  width: 80%;
-  right: 40px;
+  width: 60%;
+  right: 25%;
   position: absolute;
-  top: 940px;
+  top: 122%;
   display: none;
   z-index: -1;
  }
  #hcThree{
-  width: 50%;
-  right: 310px;
+  width: 40%;
+  right: 38%;
   position: absolute;
-  top: 900px;
+  top: 115%;
   display: none;
  }
  
+ @media screen and (max-width: 900px) {
+  header {
+    height: 50%;
+    margin-left: 15%; 
+  }
+  header h1{
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 28%;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 2.6vw;
+    width: 70%;
+    padding: 2vw;
+    background: none;
+    text-decoration: underline 2px solid rgb(40, 81, 127);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  header button{
+    position: relative;
+    margin-top: 90%;
+    margin-left: 45%;
+    width: 60%;
+    font-family: "Poppins", serif;
+    font-size: 1.8vw;
+    font-weight: 200;
+  }
+  header .wrapper{
+    width: 100vw;
+    margin-left: 12%;
+  }
+  header button:hover{
+    background-color: #f3e8e1;
+    cursor: pointer;
+  }
+  header .wrapper .floor-head{
+    position: absolute;
+    width: 90vw;
+  }
+  header .wrapper .wall{
+    position: absolute;
+    width: 90vw;
+  }
+  header .wrapper .sofa{
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 26%;
+    height: auto;
+    width: 40%;
+  }
+  header .wrapper .frontTable{
+    width: 20%;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  header .wrapper .pen-light{
+    width: 30%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 28%;
+  }
+  header .wrapper .plant{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 65%;
+    width: 25%;
+  }
+  header .wrapper .sideTable{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 6%;
+    width: 20%;
+  }
 
+  #designInterior{
+    width: 100%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 230, 196);
+    margin-top: 5%;
+    margin-left: 15%;
+    min-width: 100%;
+    width: 140%; 
+    padding: 10%;
+   }
+footer h2 , h3{
+  margin-top: 15px;
+  color: darkslategrey;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 1.5;
+ }
+ footer p{
+  width: 140vw;
+  color: darkslategrey;
+  font-size: 1.8vw;
+  font-weight: 400;
+  margin: 10px;
+ }
+
+}
  
   
